@@ -33,3 +33,61 @@
     margin-right: 10px;
     padding: 10px;
 }
+
+/* menu */
+#menu{
+    width: 100%;
+    height: 40px;
+    font-size: 20px;
+    padding: 5px 0;
+    margin: 10px 0;
+    background-color: dodgerblue;
+    text-align: center;
+}
+#menu>ul{
+    margin: 0;
+}
+#menu>ul>li{
+    display: inline;
+    padding: 20px;
+}
+#menu>ul>li>a{
+    display: inline-block;
+    color: white;
+    text-decoration: none;
+}
+#menu>ul>li>a:hover{
+    color: dodgerblue;
+    background-color: white;
+    border-radius: 5px;
+}
+/* trend */
+#trend{
+    margin: 15px;
+}
+#trend>a{
+    text-decoration: none;
+    margin: 20px 5%;
+}
+.card{
+    width: 200px;
+    height: 350px;
+    text-align: center;
+    font-weight: bolder;
+    border: 1thin solid black;
+    box-shadow: 5px 5px 3px rgb(82, 76, 76);
+    display: inline-block;
+}
+.card>img{
+    width: 200px;
+    height: 300px;
+    padding: 5px;
+}
+.tagfilm{
+    font-size: 20px;
+    text-indent: 40px;
+}
+.headtag>a{
+    text-decoration: none;
+    float: right;
+}
