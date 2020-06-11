@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HOME</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <script src="js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <style>
+        #menu{
+            height: 55px;
+        }
+    </style>
+</head>
+<body>
+    <div id="header">
+        <img src="images/logo.jpg" alt="logo" width="auto" height="100px">
+        <div id="srchbox">
+            <span><i class="fa fa-search" aria-hidden="true"></i></span>    
+            <input type="search" id="search" placeholder="Search...">
+        </div>
+        <div id="sign">
+            <a href="signin.html"><button type="button" class="btn btn-success">Đăng nhập</button></a>
+            <a href="signup.html"><button type="button" class="btn btn-info">Đăng ký</button></a> 
+            <a href="" style="padding-left: 40px;font-size: 30px; color: white;"><i class="fa fa-ticket" aria-hidden="true"></i></a> 
+        </div>
+    </div>
+    <div id="menu">
+        <ul>
+            <li><a href="index.html"><i class="fa fa-home fa-2x" aria-hidden="true"></i></a></li>
+            <li><a href="">DANH SÁCH PHIM</a></li>
+            <li><a href="">HỆ THỐNG RẠP</a></li>
+            <li><a href="">CHƯƠNG TRÌNH KHUYẾN MÃI</a></li>
+            <li><a href="">THÔNG TIN LIÊN HỆ</a></li>
+        </ul>
+    </div>  
+    <div class="container">   
+        <form>
+        <div class="form-group">
+          <label for="name">TÊN ĐĂNG NHẬP :</label>
+          <input type="text" class="form-control" id="name" placeholder="Enter your Username..." name="name">
+        </div>
+        <div class="form-group">
+          <label for="birthday">MẬT KHẨU :</label>
+          <input type="password" class="form-control" id="birthday" placeholder="Enter your Password..." name="birthday">
+        </div>
+        
+        <div class="form-group form-check">
+          <label class="form-check-label">
+            <input class="form-check-input" type="checkbox" name="remember"> Ghi nhớ mật khẩu
+          </label>
+        </div>
+        <div class="col-xl-12" align="center" style="padding-bottom: 50px;">
+            <button type="submit" class="btn btn-primary">SIGN IN</button>
+            <a href="index.html" style="padding-left: 200px;">
+                <button class="btn btn-danger">CANCEL</button>
+            </a>
+        </div>
+      </form>
+      <div id="footer">
+        <div class="contain">
+                <b>ĐIỀU KHOẢN SỬ DỤNG</b>
+                <ul>
+                    <li>Điều khoản chung</li>
+                    <li>Điều khoản giao dịch</li>
+                    <li>Chính sách thanh toán</li>
+                    <li>Chính sách bảo mật</li>
+                </ul>
+        </div>
+        <div class="contain" align="center">
+            <b>CỘNG ĐỒNG CGV</b>
+            <ul>
+                <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+                <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+                <li><i class="fa fa-youtube-play" aria-hidden="true"></i></li>
+                <li><i class="fa fa-twitter" aria-hidden="true"></i></li>
+            </ul>
+        </div>
+        <div class="contain">
+            <b>LIÊN HỆ CHÚNG TÔI</b>
+            <ul>
+                <li>Hotline: 1900 8198</li>
+                <li>Email: cinemaworld@cnm.vn</li>
+                <li>Giờ làm việc: 8:00 - 23:00</li>
+            </ul>
+        </div>
+    </div>
+    </div>
+    </body>
+</html>
