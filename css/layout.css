@@ -22,6 +22,8 @@ body{
     padding: 5px;
     margin-top: 30px;
     background-color: white;
+    align-items: center;
+    justify-content: center;
 }
 #srchbox>input{
     border: none;
@@ -30,6 +32,8 @@ body{
     display: inline-block;
     width: 30%;
     padding-right: 5%;
+    align-items: center;
+    justify-content: center;
 }
 #sign>button{
     border-radius: 25px;
@@ -43,16 +47,18 @@ body{
 #slide>button{
     border-radius: 20px;
     background-color: none;
+    border: none;
+    margin: 5px;
 }
 #slide>#right{
     position: absolute;
     margin-top: 140px;
-    margin-left: -40px;
+    right: 20%;
 }
 #slide>#left{
     position: absolute;
-    margin-top: 140px;
-    margin-left: 20px;
+    top: 140px;
+    left: 20%;
 }
 /* menu */
 #menu{
@@ -81,13 +87,17 @@ body{
     background-color: white;
     border-radius: 5px;
 }
+#active{
+    color: dodgerblue;
+    background-color: white;
+}
 /* trend */
 #trend{
     margin: 15px;
 }
 #trend>a{
     text-decoration: none;
-    margin: 20px 5%;
+    margin: 20px 6%;
 }
 .card{
     width: 200px;
@@ -118,7 +128,7 @@ body{
 }
 #comming>a{
     text-decoration: none;
-    margin: 20px 5%;
+    margin: 20px 6%;
 }
 /* footer */
 #footer{

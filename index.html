@@ -25,11 +25,16 @@
             document.getElementById('banner').src=arr[count].src;
         }
         function back(){
-            count++;
+            count--;
             if(count<0){
                 count=2;
             }
             document.getElementById('banner').src=arr[count].src;
+        }
+        function autoplay(){
+            setInterval(function(){
+                next()
+            },4000)
         }
     </script>
 </head>
@@ -51,7 +56,7 @@
         <img src="images/banner0.jpg" alt="banner" width="1000px" height="300px" id="banner">
         <button onclick="next()" id="right"><i class="fa fa-chevron-right" aria-hidden="true"></i></button>
     </div>
-    
+    <script>autoplay()</script>
    
     <div id="menu">
         <ul>
