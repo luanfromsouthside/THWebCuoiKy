@@ -9,13 +9,16 @@
     <link rel="stylesheet" href="font-awesome-4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/layout.css">
     <style>
+        #header{
+            position: relative;
+        }
         #menu{
             height: 55px;
         }
         .container{
             margin: 60px auto;
-            height: 800px;
-            background-color: whitesmoke;
+            height: 700px;
+            background-color: #ecf0f1;
         }
         .log-form{
             position: absolute;
@@ -34,7 +37,45 @@
         .log-form>h2{
             padding: 40px 25px;
         }
+        .container>img{
+            float: right;
+            width: 450px;
+            margin-top: 200px;
+        }
     </style>
+    <script>
+        function validate(){
+            var u = document.getElementById('name').value;
+            var b = document.getElementById('birthday').value;
+            var e = document.getElementById('email').value;
+            var p = document.getElementById('pwd').value;
+            var cp = document.getElementById('confirm-pwd').value;
+
+            if(u==""){
+                alert("Please enter your Name");
+                return false;
+            }
+            if(b==""){
+                alert("Please enter your Birth");
+                return false;
+            }
+            if(e==""){
+                alert("Please enter your Email");
+                return false;
+            }
+            if(p==""){
+                alert("Please enter your Password");
+                return false;
+            }
+            if(cp!=p){
+                alert("Please confirm your Password");
+                return false;
+            }
+
+            alert("Wellcome " + u + " join our Cinema");
+            return true;
+        }
+    </script>
 </head>
 <body>
     <div id="header">
@@ -59,6 +100,7 @@
         </ul>
     </div>  
     <div class="container">   
+        <img src="images/rap-phim1.jpg" alt="">
         <div class="log-form">
             <h2><i class="fa fa-sign-out" aria-hidden="true"></i> &nbsp; SIGN UP</h2>
             <hr>
@@ -90,7 +132,7 @@
                 </div>
                 <div class="form-group">
                     <span><i class="fa fa-unlock-alt" aria-hidden="true"></i></span>
-                    <label for="pwd" class="lb">Mật khẩu mới :</label>
+                    <label for="pwd" class="lb">Mật khẩu của bạn :</label>
                     <input type="password" class="form-control ctrl" id="pwd" placeholder="Enter your new password..." name="password">
                 </div>
                 <div class="form-group">
@@ -104,7 +146,7 @@
                     </label>
                 </div>
                 <div class="col-xl-12" align="center" style="padding-bottom: 50px;">
-                    <button type="submit" class="btn btn-primary" onclick="SiU()">SIGN UP</button>
+                    <button type="submit" class="btn btn-primary" onclick="validate()">SIGN UP</button>
                     <a href="index.html" style="padding-left: 200px;">
                         <button class="btn btn-danger">CANCEL</button>
                     </a>
@@ -140,11 +182,5 @@
                 </ul>
             </div>
         </div>
-    <script>
-        function SiU(){
-            var s=document.getElementById('name').value;
-            alert("Chào mừng " + s + " !!!");
-        }
-    </script>
 </body>
 </html>
